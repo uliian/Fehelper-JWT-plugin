@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jwt-decode</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row row-cols-2 gx-5">
+        <div class="col">
+          <div class="row">JWT:</div>
+          <div class="row">
+            <textarea class="form-control" id="jwt-source" rows="8"></textarea>
+          </div>
+          <div class="row justify-content-md-center decode-btn">
+            <div class="col-2">
+              <button
+                type="button"
+                class="btn btn-primary mb-3"
+                id="btn_getJwtSource"
+              >
+                解析
+              </button>
+            </div>
+            <div class="col-2">
+              <button
+                type="button"
+                class="btn btn-secondary mb-3"
+                id="btn_clean"
+              >
+                清空
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">Decoded:</div>
+          <div class="row">
+            <div>header:</div>
+            <div>
+              <code class="header"> </code>
+            </div>
+          </div>
+          <div class="row">
+            <div>payload:</div>
+            <div>
+              <code class="payload"> </code>
+            </div>
+          </div>
+          <div class="row">
+            <div>verify sign:</div>
+            <div>
+              <code class="verify_sign"> </code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="bootstrap.min.css"
+    />
+    <script src="index.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="fh-script-block.js"></script>
+    <script src="content-script.js"></script>
+  </body>
+</html>
